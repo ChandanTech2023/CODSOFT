@@ -471,4 +471,32 @@ body{
     font-size: 12px;
   }
 
+  /*------------------- Responsive Design on small screen -------------------*/
+
+/* Medium layout */
+@media screen and (min-width:1000px) and (max-width:1200px) {
+  .container{
+    width: 970px;
+
+  }
+}  
+@media(max-width:1050px){
+  .FirstElement{ 
+    flex-direction: column;
+    padding-top: 2rem;
+  }
+  .profile-text{
+    padding: 35px 0px;
+  }
+  .project{
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+}
+/* tablet layout */
+@media only screen and (min-width:768px) and (max-width:999px){
+  .container{
+    width: 750px;
+  } 
+}  
 
