@@ -245,6 +245,15 @@ body{
 }
 
 
+.move-cursor{
+  height: 15px;
+  width: 15px;
+  background-color: rgb(229, 233, 236);
+  border-radius: 50%;
+  position: absolute;
+  transition:linear all 0.3s;
+
+}
 /*---------------------------Education & Internship---------------------------*/
 
 .education-content .row{
