@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(45deg, #b1aaaa, #adadb1);
+}
+
+h1 {
+  text-align: center;
+  background-color: #a19f9f;
+  color: #08060a;
+  height: 60px;
+  font-size: 35px;
+  font-weight: 900;
+}
+
+.container {
+  background-color: #3719e4;
+  border: 2px solid black;
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+#result {
+  background-color: #dddd;
+  width: 100%;
+  padding: 10px;
+  font-size: 34px;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3) inset;
+  border-radius: 5px;
+}
+
+input::placeholder {
+  color: #1f201f;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 12px;
+  margin-top: 20px;
+}
+
+button {
+  font-size: 24px;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 60%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+
+button:hover {
+  background-color: #1805e9;
+}
+
+#clear {
+  background-color: #1b08e9;
+  color: #fff;
+}
+#delete {
+  background-color: #f13800;
+  color: #fff;
+}
+
+#operator {
+  background-color: #30d9df;
+  color: #fff;
+}
+
+#equals{
+  background-color: #e4e7eb;
+  /* grid-row: span 2; */
+  color: #0e0c0c;
+  grid-column: span 2;
+  box-shadow: 4px 7px #c0c0c8;
+  border-radius: 23px 40px;
+}
