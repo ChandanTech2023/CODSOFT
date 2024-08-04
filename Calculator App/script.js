@@ -11,6 +11,9 @@ if(buttonValue == "AC")
 {
   clearResult();
 }
+else if(buttonValue == "DEL"){
+  deleteLastchar();
+}
 else if(buttonValue == "="){
 
   calculateResult();
@@ -31,6 +34,9 @@ function calculateResult()
 {
   result.value =eval(result.value);
  
+}
+function deleteLastchar(){
+  result.value=result.value.slice(0,-1)
 }
 
 function appendValue(buttonValue)
